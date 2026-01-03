@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection on ESG Research | Anish Nagariya</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 550px;
+            margin: 60px auto;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back-link { display: block; margin-bottom: 40px; font-size: 0.9em; color: #666; }
+        h1 { font-size: 1.5em; margin-bottom: 10px; font-weight: 600; line-height: 1.2; }
+        .post-date { display: block; font-size: 0.9em; color: #888; margin-bottom: 40px; }
+        .content p { margin-bottom: 20px; }
+        strong { color: #000; }
+        ul { margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+
+        /* Style for the comment section */
+        #comments-section { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+    <a href="writing.html" class="back-link">← Back to writing</a>
+
+    <header>
+        <h1>Reflection on ESG Research</h1>
+        <span class="post-date">January 2, 2026</span>
+    </header>
+
+    <div class="content">
+        <p>Two years ago, I was bored and reaching out to people for work. That outreach eventually opened the door to a research project focused on ESG portfolios. Having wrapped up that work in May 2025, I find myself looking back:</p>
+
+        <p><strong>A summary of the research:</strong></p>
+
+        <p><strong>First of all, what is ESG?</strong></p>
+
+        <p>ESG is a framework used to evaluate a company based on three core areas:</p>
+
+        <ul>
+            <li><strong>Environmental:</strong> A company’s impact on the planet, including its carbon footprint, pollution levels, and waste management.</li>
+            <li><strong>Social:</strong> A company’s relationship with its employees and the public, covering labor relations, community impact, and data privacy.</li>
+            <li><strong>Governance:</strong> Internal management practices, such as board transparency, diversity, and shareholder rights.</li>
+        </ul>
+
+        <p>Rating firms evaluate companies based on structure, news, and any incidents that may be related to ESG. Each company is then given respective scores by the rating firm, corresponding to how well the company is doing in terms of ESG.</p>
+
+        <p>Portfolio managers then use these ratings in order to select investments. Many view them from an ethical standpoint, some from a pragmatic standpoint, and others just completely ignore it.</p>
+
+        <p>Our project’s goal was to evaluate the impact of ESG ratings on a multi-asset portfolio’s performance in the USA and Europe. Prior to my work, I expected companies with a better ESG score to perform better. After all, they are better for the planet and people. However, reality is a bit more nuanced.</p>
+
+        <p>For basic buy and hold simulations, my results found that ESG equity portfolios had worse performance compared to their respective benchmarks. This is often the case as companies that invest in sustainability often have to incur higher costs. There’s also no standardized metrics on ESG evaluation. For example, Tesla is a very controversial company ESG wise. Some agencies give it a very positive ESG score whereas others view Tesla as one of the worst companies.</p>
+
+        <p>However, through novel factor tilt models of 60/40 multi-asset portfolios, our team found that ESG-tilted portfolios consistently showed higher Sharpe ratios compared to their respective benchmarks and slightly lower maximum drawdowns.</p>
+
+        <p><strong>Moving forward:</strong></p>
+
+        <p>We used data from RepRisk. Given that there’s no standardization, it’d be interesting to see how results change depending on the data provider. Given the change in political ideologies in the states and Europe, I’d also love to explore more recent changes as well as a more intricate analysis of ESG in terms of debt-related securities.</p>
+
+        <p><strong>My Experience:</strong></p>
+
+        <p>This was my first time working on a “real” project with a team. I worked with four different researchers from ETH Zurich, and Dr. Bohn, who I did the bulk of my work with. One of the first things I noticed was the immense knowledge each of them held, discussing the very niches of the field and identifying key things we needed to explore off the bat. It’s definitely convinced me to pursue post-grad education as there’s so much to learn and it’s so cool to see.</p>
+
+        <p>Technically, I noticed data is a huge portion of the work. Getting the data is no easy task, and probably the most time-consuming part. Often, I’d be going back and forth, finding dates and fields we were missing. And every step would be setting up new Python code to efficiently format the data. At one point, we ended up getting new data which was formatted completely differently in excel.</p>
+
+        <p>As this was my first project, I also didn’t have the foresight to use matrices in an efficient manner. The bulk of my code was loops and a bunch of if statements. And soon enough, I ran into run times of 8 hours for one simulation. As a result, I ended up learning about vectorization and matrix encodings, and then went back and redid the whole codebase, bringing the runtime down to a couple seconds. But in between that, even with vectorization, I ended up having to plan out a lot of the data on paper first and was surprised with how much faster I could make the code.</p>
+
+        <p>Going into my credit project, I’m now spending a lot more time understanding the data and planning it out before doing anything. Data is the backbone of any testing and analysis and as a result, the most important part.</p>
+
+        <p>Beyond data, I also noticed that we did so much more work than what’s actually written in the paper. In fact, almost all of my contribution was in relation to some of the more background work. Exploring debt to equity ratios, other performance metrics such as information ratios, specific ESG case studies and descriptive work on the underlying data. Hopefully, I can get that back up and publish it sometime in the future.</p>
+
+        <p>Lastly, in my opinion, I felt the project kind of moved slowly. A lot of it felt like due to communication gaps, adjusting to schedules/vacations, and just waiting on data. I’m not sure if research is like this in general.</p>
+
+        <p>All in all, I think this was a project that really introduced me to the world of finance, research and data. I definitely learned a lot but looking back, I definitely would have wanted to have a more impactful contribution and in my time waiting, explored things on my own and done my own research. I’m hoping to change this in my credit work by taking initiative and just put in a lot more work.</p>
+    </div>
+
+    <div id="comments-section">
+        <div id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="REPLACE_ME_WITH_YOUR_APP_ID"
+          data-page-id="esg-research"
+          data-page-url="YOUR_WEBSITE_URL/esg-research.html"
+          data-page-title="Reflection on ESG Research"
+        ></div>
+        <script async defer src="https://cusdis.com/js/cusdis.umd.js"></script>
+    </div>
+
+</body>
+</html>
